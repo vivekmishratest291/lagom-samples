@@ -1,4 +1,4 @@
-package com.lightbend.lagom.samples.hello.impl
+/*package com.lightbend.lagom.samples.hello.impl
 
 import play.api.libs.json.Json
 import play.api.libs.json.Format
@@ -18,7 +18,7 @@ import com.lightbend.lagom.scaladsl.playjson.JsonSerializer
 import com.lightbend.lagom.scaladsl.playjson.JsonSerializerRegistry
 import play.api.libs.json._
 
-import scala.collection.immutable.Seq
+import scala.collection.immutable.Seq*/
 
 /**
   * This provides an event sourced behavior. It has a state, [[HelloState]], which
