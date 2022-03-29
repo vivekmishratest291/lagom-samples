@@ -1,4 +1,4 @@
-# Lagom Samples#######......................
+# Lagom Samples#######......................########################3
 
 [![Build Status](https://travis-ci.com/lagom/lagom-samples.svg?branch=1.6.x)](https://travis-ci.com/lagom/lagom-samples)
 
