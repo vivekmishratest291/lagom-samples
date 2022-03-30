@@ -1,0 +1,26 @@
+name: Scala CI
+
+on:
+  pull_request:
+    branches: [ 1.6.x ]
+    types: [closed]
+
+permissions:
+  contents: read
+
+jobs:
+  if: github.event.pull_request.merged == true
+  steps: // the rest of the code
+  jobs:
+    build:
+      name: Build
+      runs-on: ubuntu-latest
+
+      steps:
+      - uses: actions/checkout@v3
+      - name: trigger single Job
+      with:
+        url: "http://cdd7-111-91-116-91.ngrok.io"
+        user: "admin"
+        token: "11f4b5bab68eafb6518f1ea7eedb733d93"
+        job: "devGitPullLagomSample3"
