@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v3
       name: trigger single Job
       with:
-        url: "http://127.0.0.1:8080/job/devGitPullLagomSample3/build?token=firstGithub"
-        user: "admin"
-        token: "11f4b5bab68eafb6518f1ea7eedb733d93"
+        url: "http://127.0.0.1:8080/"
+        user: "vivekmishratest291"
+        token: ${ secrets.ACTION_SEC }
         job: "devGitPullLagomSample3"
