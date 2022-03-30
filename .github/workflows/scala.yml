@@ -17,6 +17,6 @@ jobs:
       name: trigger single Job
       with:
         url: "http://127.0.0.1:8080/job/devGitPullLagomSample3/build?token=ACTION_SEC"
-        user: "vivekmishra91test"
+        user: "vivekmishratest291"
         token: ${ secrets.ACTION_SEC }
         job: "devGitPullLagomSample3"
