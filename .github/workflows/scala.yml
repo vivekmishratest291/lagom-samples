@@ -17,6 +17,6 @@ jobs:
       name: trigger single Job
       with:
         url: "http://127.0.0.1:8080/job/devGitPullLagomSample3/build?token=firstGithub"
-        user: "admin"
+        user: "vivekmishra91test"
         token: "11f4b5bab68eafb6518f1ea7eedb733d93"
         job: "devGitPullLagomSample3"
