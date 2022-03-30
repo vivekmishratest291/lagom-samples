@@ -9,16 +9,12 @@ permissions:
   contents: read
 
 jobs:
-  if: github.event.pull_request.merged == true
-  steps: // the rest of the code
-  jobs:
-    build:
-      name: Build
-      runs-on: ubuntu-latest
-
-      steps:
-      - uses: actions/checkout@v3
-      - name: trigger single Job
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: trigger single Job
       with:
         url: "http://127.0.0.1:8080/job/devGitPullLagomSample3/build?token=firstGithub"
         user: "admin"
