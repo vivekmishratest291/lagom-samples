@@ -11,4 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         name: trigger single Job
+        with:
+          url: "http://127.0.0.1:8080/"
+          job: "devGitPullLagomSample3"
       - run: echo "jenkins"
