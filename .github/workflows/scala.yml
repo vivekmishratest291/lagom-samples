@@ -4,6 +4,9 @@ on:
   pull_request_target:
     branches: [ 1.6.x ]
 
+permissions:
+  contents: write
+
 jobs:
   image-creation:
     runs-on: ubuntu-latest
