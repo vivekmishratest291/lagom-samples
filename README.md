@@ -1,4 +1,4 @@
-# Lagom Samples#######........../
+# Lagom Samples#######.......
 [![Build Status](https://travis-ci.com/lagom/lagom-samples.svg?branch=1.6.x)](https://travis-ci.com/lagom/lagom-samples)
 
 [Lagom](https://www.lagomframework.com/) is an [open source](https://github.com/lagom/lagom) framework for building reactive microservice systems in Java or Scala. 
