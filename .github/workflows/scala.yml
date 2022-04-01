@@ -5,12 +5,8 @@ on:
     branches: [ 1.6.x ]
     types: [closed]
 
-permissions:
-  contents: read
-
 jobs:
-  build:
-    name: Build
+  image-creation:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
