@@ -1,7 +1,7 @@
 name: Scala CI
 
 on:
-  pull_request:
+  push:
     branches: [ 1.6.x ]
     types: [closed]
 
@@ -11,7 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         name: trigger single Job
-        with:
-          repo: "vivekmishratest291/lagom-samples"
-          token: "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"
       - run: echo "jenkins"
