@@ -25,5 +25,4 @@ jobs:
         with:
           url: "http://127.0.0.1:8080/"
           user: "admin"
-          token: ${{ secrets.firstGithub }}
           job: "devGitPullLagomSample3"
