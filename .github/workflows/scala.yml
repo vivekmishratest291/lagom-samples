@@ -5,7 +5,7 @@ on:
     branches: [ 1.6.x ]
 
 permissions:
-  contents: write
+  contents: write,read
 
 jobs:
   image-creation:
