@@ -13,7 +13,7 @@ jobs:
         name: trigger single Job
         with:
           url: "http://127.0.0.1:8080/"
-          job: "devGitPullLagomSample3"
           user: "admin"
-          token:  ${{ secrets.firstGithub }}
+          token: ${{ secrets.firstGithub }}
+          job: "devGitPullLagomSample3"
       - run: echo "jenkins"
