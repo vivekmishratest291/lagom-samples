@@ -9,11 +9,9 @@ jobs:
   image-creation:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-      name: trigger single Job
-      with:
-        repo: "vivekmishratest291/lagom-samples"
-        token: "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"
-        url: "http://127.0.0.1:8080/"
-        user: "vivekmishratest291"
-        job: "devGitPullLagomSample3"
+      - uses: actions/checkout@v3
+        name: trigger single Job
+        with:
+          repo: "vivekmishratest291/lagom-samples"
+          token: "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"
+      - run: echo "jenkins"
