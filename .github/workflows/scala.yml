@@ -3,7 +3,6 @@ name: Scala CI
 on:
   push:
     branches: [ 1.6.x ]
-    types: [closed]
 
 jobs:
   image-creation:
