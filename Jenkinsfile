@@ -5,7 +5,7 @@ node('jenkins-slave') {
             echo "hello"
            git clone https://github.com/vivekmishratest291/lagom-samples.git
            cd ./lagom-samples/couchbase-persistence/docker/
-          java -Dsbt.log.noformat=true -jar /var/jenkins_home/sbt-0.3.8/sbt-launch.jar docker:publishLocal
+          /opt/java/openjdk/bin/java -Dsbt.log.noformat=true -jar /var/jenkins_home/sbt-0.3.8/sbt-launch.jar docker:publishLocal
         """)
     }
 }
