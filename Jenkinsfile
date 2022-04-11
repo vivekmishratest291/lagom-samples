@@ -6,7 +6,7 @@ node('jenkins-slave') {
            git clone https://github.com/vivekmishratest291/lagom-samples.git
            cd ./lagom-samples/couchbase-persistence/docker/
            
-           docker build . -t test
+          sbt  docker:publishLocal
         """)
     }
 }
