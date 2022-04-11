@@ -5,8 +5,7 @@ node('jenkins-slave') {
             echo "hello"
            git clone https://github.com/vivekmishratest291/lagom-samples.git
            cd ./lagom-samples/couchbase-persistence/docker/
-           
-          sbt  docker:publishLocal
+          sbt docker:publishLocal
         """)
     }
 }
