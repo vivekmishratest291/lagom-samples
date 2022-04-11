@@ -4,7 +4,7 @@ node('jenkins-slave') {
         sh(script: """
             echo "hello"
            git clone https://github.com/vivekmishratest291/lagom-samples.git
-           cd ./lagom-samples/mixed-persistence/mixed-persistence-scala-sbt/
+           cd ./lagom-samples/couchbase-persistence/docker/
            
            docker build . -t test
         """)
