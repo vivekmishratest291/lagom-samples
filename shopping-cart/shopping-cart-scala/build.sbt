@@ -12,6 +12,9 @@ val akkaDiscoveryKubernetesApi = "com.lightbend.akka.discovery" %% "akka-discove
 val lagomScaladslAkkaDiscovery = "com.lightbend.lagom"          %% "lagom-scaladsl-akka-discovery-service-locator" % lagomVersion
 
 ThisBuild / scalacOptions ++= List("-encoding", "utf8", "-deprecation", "-feature", "-unchecked", "-Xfatal-warnings")
+Universal / javaOptions ++= Seq(
+  "-Dpidfile.path=/dev/null"
+)
 
 def dockerSettings = Seq(
   dockerUpdateLatest := true,
