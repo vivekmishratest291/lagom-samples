@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Lagom Samples####
-=======
-# Lagom Samples#######....////////
->>>>>>> parent of 41fae9d... Update README.md
 
 [![Build Status](https://travis-ci.com/lagom/lagom-samples.svg?branch=1.6.x)](https://travis-ci.com/lagom/lagom-samples)
 
