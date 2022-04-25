@@ -1,16 +1,4 @@
 node {
-    stage('SBT compile*****') {
-        dir('./shopping-cart/shopping-cart-scala') {
-        sh "pwd"
-        sh script: '''
-                #!/bin/bash
-                wget -P $WORKSPACE/lagom-samples/shopping-cart/shopping-cart-scala https://github.com/sbt/sbt/releases/download/v1.3.13/sbt-1.3.13.zip
-                cd $WORKSPACE/lagom-samples/shopping-cart/shopping-cart-scala/
-                unzip sbt-1.3.13.zip
-                java -Dsbt.log.noformat=true -jar ./sbt/bin/sbt-launch.jar clean compile
-                '''
-        }
-  }
   stage('SCM') {
     checkout scm
       sh "pwd"
