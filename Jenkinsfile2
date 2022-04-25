@@ -9,9 +9,9 @@ node {
       sh "pwd"
     withSonarQubeEnv('lagom-sonar') {
       sh "${scannerHome}/bin/sonar-scanner \
-  -Dsonar.projectKey=lagom-sonar-k8s \
+  -Dsonar.projectKey=lagom-sample-k8s \
   -Dsonar.sources=. \
-  -Dsonar.host.url=http://127.0.0.1:9002/sonarqube \
+  -Dsonar.host.url=http://localhost:9004/sonarqube \
   -Dsonar.login=09aac7e9336eda223848c1c8940311a0877002c2"
     }
   }
