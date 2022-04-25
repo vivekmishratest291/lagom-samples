@@ -1,4 +1,4 @@
-node {
+node('jenkins-slave') {
   stage('SCM') {
     checkout scm
       sh "pwd"
