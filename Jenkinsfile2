@@ -11,8 +11,8 @@ node {
       sh "${scannerHome}/bin/sonar-scanner \
   -Dsonar.projectKey=lagom-sample-k8s \
   -Dsonar.sources=. \
-  -Dsonar.host.url=http://localhost:9002/sonarqube \
-  -Dsonar.login=09aac7e9336eda223848c1c8940311a0877002c2"
+  -Dsonar.host.url=http://localhost:9004/sonarqube \
+  -Dsonar.login=382382a4998fecadbdff88bffb1da7d6e31a6eda"
     }
   }
   }
