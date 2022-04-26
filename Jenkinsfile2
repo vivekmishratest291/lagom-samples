@@ -6,7 +6,8 @@ node('jenkins-slave') {
   stage('SonarQube Analysis') {
         dir('./shopping-cart/shopping-cart-scala') {
     def scannerHome = tool 'SonarScanner';
-      sh "pwd"
+      sh "pwd" 
+      sh "echo ${scannerHome}"
     withSonarQubeEnv('lagom-sonar') {
       sh "${scannerHome}/bin/sonar-scanner \
   -Dsonar.projectKey=lagom-sample-k8s \
