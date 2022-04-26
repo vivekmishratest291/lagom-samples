@@ -2,9 +2,8 @@ node {
   stage('SCM') {
     checkout scm
       sh "pwd"
-      sh "sleep 5m" 
       sh "cp -r /var/jenkins_home/sonarqube-dev/ /opt/"
-      sh "./opt/sonarqube-dev/sonarqube-9.4.0.54424/bin/linux-x86-64/sonar.sh start"
+      sh "sh /opt/sonarqube-dev/sonarqube-9.4.0.54424/bin/linux-x86-64/sonar.sh start"
   }
   stage('SonarQube Analysis') {
         dir('./shopping-cart/shopping-cart-scala') {
