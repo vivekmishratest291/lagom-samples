@@ -1,4 +1,10 @@
-node('jenkins-slave') {
+node {
+    agent { 
+        kubernetes{
+            label 'jenkins-slave'
+        }
+        
+    }
   stage('SCM') {
     checkout scm
       sh "pwd"
