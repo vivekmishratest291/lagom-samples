@@ -12,17 +12,10 @@ node {
       sh "${scannerHome}/bin/sonar-scanner \
   -Dsonar.projectKey=lagom-sample-k8s \
   -Dsonar.sources=. \
-  -Dsonar.host.url=http://10.0.0.31:9002/sonarqube \
+  -Dsonar.host.url=http://localhost:9002/sonarqube \
   -Dsonar.login=382382a4998fecadbdff88bffb1da7d6e31a6eda"
     }
   }
   }
-  stage("Quality Gate"){
-          timeout(time: 1, unit: 'MINUTES') {
-              def qg = waitForQualityGate()
-              if (qg.status != 'OK') {
-                  error "Pipeline aborted due to quality gate failure: ${qg.status}"
-              }
-          }
-      }
+
 }
