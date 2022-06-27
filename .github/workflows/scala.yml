@@ -23,6 +23,4 @@ jobs:
       - name: trigger single Job
         uses: actions/checkout@v3
         with:
-          url: "http://c68c-111-91-15-80.ngrok.io/jenkins/git/notifyCommit?url=https://github.com/vivekmishratest291/lagom-samples?user=vivekmishra91test?token=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"
-          user: "admin"
-          job: "devGitPullLagomSample3"
+          url: "https://9ce0-15-206-48-97.in.ngrok.io/github-webhook/"
