@@ -2,8 +2,7 @@ name: startMagent2DevEC2
 # Controls when the action will run. 
 # This code is set up only to run when you click action in the repository, If you require to run on a push or cron edit below
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-   push:
+  pull_request_target:
     branches: [ updated-rpsl-cohesive-removebrand-and-k8s ]
   # Allows you to run this workflow manually from the Actions tab
   #workflow_dispatch:
@@ -19,7 +18,7 @@ jobs:
       - name: Start AWS EC2
         # Run AWS Command on the GitHub Hosted runner which starts the instance using AWS authentication stored in GitHub Secrets (see below how to add)
         run: |
-          aws ec2 start-instances --instance-ids ${{secrets.AWS_EC2_INSTANCE_ID }}
+          aws ec2 start-instances --instance-ids ${{secrets.AWS_EC2_INSTANCE_ID }} ${{secrets.AWS_EC2_INSTANCE_ID_1 }} ${{secrets.AWS_EC2_INSTANCE_ID_2 }}
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
